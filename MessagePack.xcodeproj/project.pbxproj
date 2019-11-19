@@ -323,8 +323,6 @@
 		8253217F1EFFC9C400914B55 /* MessagePack */ = {
 			isa = PBXGroup;
 			children = (
-				BDB77A55206B3F57001925D0 /* Encoder */,
-				BDB77A50206B3F57001925D0 /* Decoder */,
 				BDB77A84206B40FF001925D0 /* MessagePackRepresentable.swift */,
 				825321971EFFCA0D00914B55 /* ConvenienceInitializers.swift */,
 				825321981EFFCA0D00914B55 /* ConvenienceProperties.swift */,
@@ -333,6 +331,16 @@
 				8253219B1EFFCA0D00914B55 /* Pack.swift */,
 				8253219C1EFFCA0D00914B55 /* Subdata.swift */,
 				8253219D1EFFCA0D00914B55 /* Unpack.swift */,
+				BDB77A53206B3F57001925D0 /* MessagePackDecoder.swift */,
+				BDB77A52206B3F57001925D0 /* MessagePackKeyedDecodingContainer.swift */,
+				BDB77A54206B3F57001925D0 /* MessagePackSingleValueDecodingContainer.swift */,
+				BDB77A51206B3F57001925D0 /* MessagePackUnkeyedDecodingContainer.swift */,
+				BDB77A5B206B3F57001925D0 /* MessagePackEncoder.swift */,
+				BDB77A57206B3F57001925D0 /* _MessagePackEncoder.swift */,
+				BDB77A5A206B3F57001925D0 /* MessagePackKeyedEncodingContainer.swift */,
+				BDB77A56206B3F57001925D0 /* MessagePackSingleValueEncodingContainer.swift */,
+				BDB77A59206B3F57001925D0 /* MessagePackUnkeyedEncodingContainer.swift */,
+				BDB77A58206B3F57001925D0 /* MessagePackStorage.swift */,
 			);
 			name = MessagePack;
 			path = Sources/MessagePack;
@@ -373,30 +381,6 @@
 				825321CC1EFFCA2800914B55 /* Tests-Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BDB77A50206B3F57001925D0 /* Decoder */ = {
-			isa = PBXGroup;
-			children = (
-				BDB77A53206B3F57001925D0 /* MessagePackDecoder.swift */,
-				BDB77A52206B3F57001925D0 /* MessagePackKeyedDecodingContainer.swift */,
-				BDB77A54206B3F57001925D0 /* MessagePackSingleValueDecodingContainer.swift */,
-				BDB77A51206B3F57001925D0 /* MessagePackUnkeyedDecodingContainer.swift */,
-			);
-			path = Decoder;
-			sourceTree = "<group>";
-		};
-		BDB77A55206B3F57001925D0 /* Encoder */ = {
-			isa = PBXGroup;
-			children = (
-				BDB77A5B206B3F57001925D0 /* MessagePackEncoder.swift */,
-				BDB77A57206B3F57001925D0 /* _MessagePackEncoder.swift */,
-				BDB77A5A206B3F57001925D0 /* MessagePackKeyedEncodingContainer.swift */,
-				BDB77A56206B3F57001925D0 /* MessagePackSingleValueEncodingContainer.swift */,
-				BDB77A59206B3F57001925D0 /* MessagePackUnkeyedEncodingContainer.swift */,
-				BDB77A58206B3F57001925D0 /* MessagePackStorage.swift */,
-			);
-			path = Encoder;
 			sourceTree = "<group>";
 		};
 		BDB77A89206B67A8001925D0 /* Codable */ = {
@@ -621,6 +605,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 825321731EFFC9C400914B55;
