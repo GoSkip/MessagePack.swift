@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
-  s.source       = { :git => 'https://github.com/GoSkip/MessagePack.swift', :commit => 'e8214304a96e32bbb46ae01c85e72f872f4f6d2c' }
+  s.source       = { :git => 'https://github.com/GoSkip/MessagePack.swift' }
   s.source_files = 'Sources/MessagePack/*.swift'
   s.module_name  = 'MessagePack'
 end

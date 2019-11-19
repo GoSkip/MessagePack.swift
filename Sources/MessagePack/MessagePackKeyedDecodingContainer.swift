@@ -89,7 +89,7 @@ extension MessagePackKeyedDecodingContainer: KeyedDecodingContainerProtocol {
     var codingPath: [CodingKey] { return [] }
     
     var allKeys: [Key] {
-        return map.keys.flatMap() {
+		return map.keys.compactMap() {
             guard let stringValue = $0.stringValue else { return nil }
             return Key(stringValue: stringValue)
         }

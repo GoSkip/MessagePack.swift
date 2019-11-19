@@ -17,7 +17,7 @@ open class MessagePackEncoder {
         
         public static let ignoreKeysWithNilValue = KeyedEncodingOptions(rawValue: 1 << 0)
     }
-    open static var defaultKeyedEncodingOptions: KeyedEncodingOptions = []
+	public static var defaultKeyedEncodingOptions: KeyedEncodingOptions = []
     open var keyedEncodingOptions = MessagePackEncoder.defaultKeyedEncodingOptions
     
     public init() {}
